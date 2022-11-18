@@ -11,7 +11,7 @@ COPY . /app
 WORKDIR /app
 
 # Run the HelloWorldDocker.Main class
-CMD HelloWorld
+CMD HelloWorldSurya
 
 # Expose ports
 EXPOSE 8080
