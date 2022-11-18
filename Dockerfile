@@ -15,3 +15,7 @@ CMD HelloWorld
 
 # Expose ports
 EXPOSE 8080
+
+RUN ["javac","HelloWorld.java"]
+
+ENTRYPOINT ["java","HelloWorld"]
