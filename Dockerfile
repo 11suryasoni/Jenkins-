@@ -5,7 +5,7 @@ FROM openjdk:17
 RUN mkdir /app
 
 # Copy the app files from host machine to image filesystem
-COPY src/HelloWorldDocker/ /app
+COPY . /app
 
 # Set the directory for executing future commands
 WORKDIR /app
