@@ -1,5 +1,5 @@
-# Use the OpenJDK 11 image as the base image
-FROM openjdk:11
+# Use the OpenJDK 17 image as the base image
+FROM openjdk:17
 
 # Create a new app directory for my application files
 RUN mkdir /app
@@ -10,8 +10,8 @@ COPY src/HelloWorldDocker/ /app
 # Set the directory for executing future commands
 WORKDIR /app
 
+# Run the HelloWorldDocker.Main class
+CMD HelloWorld
+
 # Expose ports
 EXPOSE 8080
-
-# Run the HelloWorldDocker.Main class
-CMD java Main.java
